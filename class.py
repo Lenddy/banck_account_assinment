@@ -1,5 +1,5 @@
 class BankAccount:
-    # if you waht to change the interes rate just chane the int_rate number 
+    # if you want to change the interes rate just chane the int_rate number 
     def __init__(self,balance = 0,int_rate = 0.01):
         self.int_rate = int_rate
         self.balance = balance
