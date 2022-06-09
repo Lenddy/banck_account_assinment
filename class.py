@@ -1,5 +1,6 @@
 class BankAccount:
-    def __init__(self,balance = 0,int_rate = 00.1):
+    # if you waht to change the interes rate just chane the int_rate number 
+    def __init__(self,balance = 0,int_rate = 0.01):
         self.int_rate = int_rate
         self.balance = balance
 
@@ -19,15 +20,21 @@ class BankAccount:
 
     def display_account_info(self):
         print("your balance is", self.balance)
-        print("your interest reate is",self.int_rate)
+        print("your interest rate is",self.int_rate)
 
 
     def yield_interest(self):
         if self.balance > 0:
             self.balance += self.balance * self.int_rate 
 
-
+# if you want to change the amount on your account just change the number on account = BankAccount()
 account = BankAccount(100.00)
+account.display_account_info()
+# if you want to deposit a differnt amount just change the value inside account.deposit()
+account.deposit(100.00)
+account.display_account_info()
+# if you want to withdraw a differnt amount just change the value inside account.withdraw()
+account.withdraw(50.00)
 account.display_account_info()
 account.yield_interest()
 account.display_account_info()
