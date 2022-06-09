@@ -5,7 +5,6 @@ class BankAccount:
         self.balance = balance
 
 
-        
     def deposit(self, amount):
         current_balance = self.balance
         new_balance= current_balance + amount
